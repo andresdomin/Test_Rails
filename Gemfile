@@ -1,11 +1,13 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+gem 'rails', '3.2.11'
+gem 'devise', '2.2.3'
+gem "oauth-plugin", '0.4.1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'mysql2', '0.3.11'
 
 
 # Gems used only for assets and not required
@@ -14,13 +16,23 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
 
+  gem "therubyracer",'0.11.3'
+
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
 end
-
+gem "less-rails", '2.2.6' #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem "twitter-bootstrap-rails",'2.2.4'
 gem 'jquery-rails'
+gem "debugger-ruby_core_source", "~> 1.2.0"
+gem 'will_paginate', '~> 3.0'
+gem 'savon', '~> 2.1.0'
+gem 'whenever', '0.8.2', :require => false
+gem 'nokogiri' , '1.5.9'
+gem 'jquery-datatables-rails','1.11.2'
+gem 'spreadsheet', '0.8.1'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
